@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/left_scroll" />
+
+    <ScrollView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please input number here"
+                android:id="@+id/sound_input"
+                />
+            
+            <CheckBox
+                android:id="@+id/yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+               
+               <TextView
+                android:id="@+id/sound_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPEED"
+                />
+                
+                <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"/>
+            
+            </LinearLayout>
+           
+           
+            
+               <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="intelligenceAmountReader"
+                android:text="@string/intelligence_amount_read" />
+               
+               <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="commonAmountReader"
+                android:text="@string/common_amount_read" />
+
+
+              <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="swipeCard"
+                android:text="@string/swipe_card_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="insertCard"
+                android:text="@string/insert_card_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="waveCard"
+                android:text="@string/wave_card_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="swipeWaveCard"
+                android:text="@string/swipe_wave_card_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="swipeInsertCard"
+                android:text="@string/swipe_insert_card_please" />
+            
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="waveInsertCard"
+                android:text="请挥/插卡" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="swipeInsertWaveCard"
+                android:text="@string/swipe_insert_wave_card_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="transactionNoLeaveCard"
+                android:text="@string/transaction_no_leave_card" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="transactionOkLeaveCard"
+                android:text="@string/transaction_ok_leave_card" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="inputAmount"
+                android:text="@string/input_amount_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="inputPwd"
+                android:text="@string/inupt_password_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="pwdLengthNotEnough"
+                android:text="@string/password_length_not_enough" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="confirmCardNoAmount"
+                android:text="@string/confirm_cardno_amount" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="communicateWait"
+                android:text="@string/communicate_wait" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="printWait"
+                android:text="@string/print_wait" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="pwdWrongReTransaction"
+                android:text="@string/password_wrong_retransaction" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="printerLackPaper"
+                android:text="@string/printer_lack_paper_deal" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="lowPowerNoPrint"
+                android:text="@string/low_power_no_print" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="transactionSuccess"
+                android:text="@string/transaction_success" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="communicateError"
+                android:text="@string/communicate_error" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sign"
+                android:text="@string/sign_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="balance"
+                android:text="@string/balance_please" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="automaticSuccess"
+                android:text="@string/automatic_success" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="activationSuccess"
+                android:text="@string/activation_success" />
+           
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

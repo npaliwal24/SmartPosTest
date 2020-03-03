@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/left_scroll" />
+
+    <ScrollView
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/main_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/camera_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/camera_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rear" />
+
+                <RadioButton
+                    android:id="@+id/camera_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Front" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/camera_display_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:checkedButton="@+id/camera_display_normal" >
+
+                <RadioButton
+                    android:id="@+id/camera_display_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/normal_effect" />
+
+                <RadioButton
+                    android:id="@+id/camera_display_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_effect" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/light_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/light_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flash_light" />
+
+                <RadioButton
+                    android:id="@+id/light_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flash_off" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/quickscan_fastScan_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="stsartFastScan"
+                android:text="@string/base_server_scan" />
+
+            <Button
+                android:id="@+id/quickscan_fastdecode_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="stsartFastDecode"
+                android:text="@string/base_server_decode" />
+
+            <Button
+                android:id="@+id/quickscan_clear_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearDisplay"
+                android:text="@string/clear_display" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

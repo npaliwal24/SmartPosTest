@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/left_scroll" />
+
+    <LinearLayout
+        android:id="@+id/main_linearlayout"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="expinpadSelected"
+                            android:text="@string/external_pinpad" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="pinpadSelected"
+                            android:text="@string/inner_pinpad" />
+                    </RadioGroup>
+
+                    <LinearLayout 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boudate"/>
+                        
+                        <Spinner
+                            android:id="@+id/baudrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" 
+                            android:entries="@array/BAUDRATE"/>
+
+                    </LinearLayout>
+                     <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="open"
+                        android:text="@string/open" />
+                    
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="close"
+                        android:text="@string/close" />
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="dispersePik"
+                        android:text="@string/dis_pik" />
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="disperseSMPik"
+                        android:text="@string/dis_sm4_pik" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="disperseMak"
+                        android:text="@string/dis_mak" />
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="disperseSMMak"
+                        android:text="@string/dis_sm4_mak" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="disperseTdk"
+                        android:text="@string/dis_tdk" />
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="disperseSMTdk"
+                        android:text="@string/dis_sm4_tdk" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="getRandom"
+                        android:text="@string/get_random" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="getMac"
+                        android:text="@string/mac_caculate" />
+                    
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="getPin1"
+                        android:text="@string/get_pin" />
+					<Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="getPin"
+                        android:text="@string/SM4_get_pin" />
+                    
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="encryptData"
+                        android:text="@string/data_encryp" />
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="smEncryptData"
+                        android:text="@string/SM4_data_encryp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="confirmGetPin"
+                        android:text="@string/pin_confirm" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="cancelGetPin"
+                        android:text="@string/pin_cancel" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="display"
+                        android:text="@string/pinpad_show" />
+                    
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="rfcardStatus"
+                        android:text="@string/exteranl_rfcard_get_state" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="rfcardReset"
+                        android:text="@string/external_rfcard_reset" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="rfcardsendCmd"
+                        android:text="@string/exteranl_rfcard_send_cmd" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="rfcardHalt"
+                        android:text="@string/external_rfcard_interrupt_succ" />
+			
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="downloadKekEncryptedMKey"
+                        android:text="@string/downTmk" />
+                    
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="downloadKekEncryptedWKey"
+                        android:text="@string/downTwk" />
+                    
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="startSign"
+                        android:text="@string/startSign" />
+                    
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="stopSign"
+                        android:text="@string/stopSign" />
+                    
+                      
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="getHardSn"
+                        android:text="@string/getHardSn" />
+                    
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="getMacForSNK"
+                        android:text="@string/getMacForSnk" />
+                    
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="getCheckValue"
+                        android:text="@string/getCheckValue" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

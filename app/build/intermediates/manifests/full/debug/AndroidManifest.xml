@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.centerm.smartpos"
+    android:versionCode="315"
+    android:versionName="3.1.5_2C2P" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <!-- 密码键盘权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_PINPAD_MODULE" />
+    <!-- 刷卡设备权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_SWIPE_MODULE" />
+    <!-- PBOC权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_NEW_PBOC_MODULE" />
+    <!-- IC卡设备权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_IC_MODULE" />
+    <!-- 非接卡设备权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_RF_MODULE" />
+    <!-- 打印机权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_PRINTER_MODULE" />
+    <!-- M1卡设备权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_M1_MODULE" />
+    <!-- PSAM卡设备权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_PSAM_MODULE" />
+    <!-- 串口设备权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_SERIAL_PORT_MODULE" />
+    <!-- 语音播报 -->
+    <uses-permission android:name="android.permission.CPAYSDK_VOICE_MODULE" />
+    <!-- 扫码权限 -->
+    <uses-permission android:name="android.permission.CPAYSDK_QUICK_SCAN" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.centerm.smartpos.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.centerm.smartpos.SwipeCardActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.PinPadActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.PbocActivity2" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.ICCardActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.PrinterActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.IRFCardActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.M1CardActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.PsamActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.SerialPortActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.QuickScanActivity" >
+        </activity>
+        <activity android:name="com.centerm.smartpos.SoundPlayerActivity" >
+        </activity>
+        <activity android:name="com.centerm.scanActivity.NewScanActivity" />
+    </application>
+
+</manifest>

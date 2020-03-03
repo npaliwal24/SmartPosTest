@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="FUNCTION_LIST">
+        <item>Quick Scan</item> 
+        <item>Magnetic stripe card device</item>
+        <item>Pinpad device</item>
+        <item>Pboc simple interface</item>
+        <item>IC card</item>
+        <item>RF card</item>
+        <item>Printer device</item>
+        <item>M1 card</item>
+        <item>PSAM card</item>
+        <item>SerialPort device</item>
+        <item>Voice device</item>
+    </string-array>
+     
+    <string-array name="MODEM_CONN">
+        <item >MODEM_CONN_NORMAL</item>
+        <item >MODEM_CONN_V22</item>
+        <item >MODEM_CONN_V22BIS</item>
+        <item >MODEM_CONN_V29</item>
+        <item >MODEM_CONN_ASYN</item>
+    </string-array>
+    
+    <string-array name="SERIALPROT_DEVICE">
+        <item >Serial port 1</item>
+        <item >Serial port 2</item>
+    </string-array>
+    
+    <string-array name="BAUDRATE" >
+        <item >9600</item>
+        <item >115200</item>
+    </string-array>
+    
+    <string-array name="KERNEL_TYPE">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+        <item >9</item>
+        <item >10</item>
+    </string-array>
+    
+    <string-array name="SLOT_CHOOSE">
+        <item >BOTH</item>
+        <item >None Vertical Card</item>
+        <item >Only Vertical Card</item>
+    </string-array>
+</resources>
